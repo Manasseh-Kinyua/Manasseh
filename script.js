@@ -2,9 +2,9 @@ console.log("It is working")
 
 let theme = localStorage.getItem('theme')
 
-if(theme = null) {
+if(theme == null) {
     setTheme('light')
-}else {
+}else{
     setTheme(theme)
 }
 
