@@ -206,6 +206,9 @@ h6 {
     grid-area: right-column;
     display: grid;
     align-content: center;
+
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 #preview-shadow {
@@ -250,9 +253,49 @@ h6 {
     right: -5px;
 }
 
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 100px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+.social-links {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#social-image {
+    width: 100%;
+}
+
 
 @media  screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    .intro-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column {
+        justify-content: center;
     }
 }
