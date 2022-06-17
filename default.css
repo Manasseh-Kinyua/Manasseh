@@ -84,7 +84,7 @@ h6 {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
+    /* grid-template-rows: 3em 30em; */
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -141,6 +141,15 @@ h6 {
 
 .left-column {
     grid-area: left-column;
+}
+
+#profile-pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
 }
 
 .right-column {
