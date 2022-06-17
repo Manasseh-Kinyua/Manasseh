@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="default.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" href="blue.css">
 </head>
 <body>
     <section class="s1">
@@ -112,27 +116,36 @@
             <h3 style="text-align: center;">Some of my Past Projects</h3>
             <div class="post-wrapper">
 
-                <div class="post">
-                    <img class="thumbnail" src="images/port.jpg" alt="">
-                    <div class="post-preview">
-                        <h6 class="post-title">Post Title</h6>
-                        <p class="post-intro">This is a project intro.</p>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/port.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a project intro.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="post">
-                    <img class="thumbnail" src="images/port.jpg" alt="">
-                    <div class="post-preview">
-                        <h6 class="post-title">Post Title</h6>
-                        <p class="post-intro">This is a project intro.</p>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/port.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a project intro.</p>
+                            <a href="#"></a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="post">
-                    <img class="thumbnail" src="images/port.jpg" alt="">
-                    <div class="post-preview">
-                        <h6 class="post-title">Post Title</h6>
-                        <p class="post-intro">This is a project intro.</p>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/port.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a project intro.</p>
+                            <a href="#"></a>
+                        </div>
                     </div>
                 </div>
 
@@ -141,7 +154,23 @@
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form id="contact-form" action="">
+
+                <label for="">Name</label>
+                <Input class="input-field" type="text" name="name"></Input>
+
+                <label for="">Subject</label>
+                <Input class="input-field" type="text" name="subject"></Input>
+
+                <label for="">Email</label>
+                <Input class="input-field" type="text" name="email"></Input>
+
+                <label for="">Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 </body>
