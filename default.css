@@ -1,6 +1,6 @@
 :root {
-    --mainColor: #eaeaea;
-    --secondaryColor: #fff;
+    --mainColor: rgb(234, 234, 234);
+    --secondaryColor: rgb(255, 255, 255);
 
     --borderColor: #c1c1c1;
 
@@ -64,12 +64,20 @@ h6 {
 }
 
 .s1 {
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
+    background:
+        linear-gradient(45deg, rgb(255, 255, 255), transparent),
+        repeating-linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 5%, transparent 5%, transparent 10%),
+        rgb(225, 216, 216) repeating-linear-gradient(-45deg, rgb(255, 255, 255,0.5) 0%, rgb(255, 255, 255,0.5) 5%, transparent 5%, transparent 10%);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
 .s2 {
-    background-color: var(--secondaryColor);
+    /* background-color: var(--secondaryColor); */
+    background:
+        linear-gradient(45deg, rgb(255, 255, 255), transparent),
+        repeating-linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 5%, transparent 5%, transparent 10%),
+        rgb(225, 216, 216) repeating-linear-gradient(-45deg, rgb(255, 255, 255,0.5) 0%, rgb(255, 255, 255,0.5) 5%, transparent 5%, transparent 10%);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
@@ -87,7 +95,10 @@ h6 {
 }
 
 .intro-wrapper {
-    background-color: var(--secondaryColor);
+    background:
+        linear-gradient(45deg, rgb(255, 255, 255), transparent),
+        repeating-linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 5%, transparent 5%, transparent 10%),
+        rgb(225, 216, 216) repeating-linear-gradient(-45deg, rgb(255, 255, 255,0.5) 0%, rgb(255, 255, 255,0.5) 5%, transparent 5%, transparent 10%);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -161,6 +172,18 @@ h6 {
     padding-bottom: 50px;
 }
 
+.image-holder {
+    width: 300px;
+    height: 200px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 1rem;
+    background-color: var(--mainColor);
+    border-radius: 10% 40% 20% 70% / 60% 40% 20% 10%;
+    animation: morph 5s ease-in-out infinite;
+    
+}
+
 #profile-pic {
     display: block;
     margin: 0 auto;
@@ -168,6 +191,12 @@ h6 {
     width: 200px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
+    border-radius: 10% 40% 20% 70% / 60% 40% 20% 10%;
+    animation: morph 5s ease-in-out infinite;
+}
+
+#profile-pic:hover {
+    border-radius: 40% 10% 20% 80% / 60% 70% 40% 10%;
 }
 
 #theme-options-wrapper {
@@ -228,6 +257,7 @@ h6 {
     height: 200px;
     padding-left: 30px;
     padding-top: 30px;
+    border-radius: 10% 40% 20% 70% / 60% 40% 20% 40%;
 }
 
 #preview {
@@ -236,6 +266,7 @@ h6 {
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+    border-radius: 10% 40% 20% 70% / 60% 40% 20% 10%;
 }
 
 .corner {
@@ -385,5 +416,19 @@ h6 {
 
     .right-column {
         justify-content: center;
+    }
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 10% 40% 20% 70% / 60% 40% 20% 10%;
+    }
+
+    50% {
+        border-radius: 20% 70% 40% 70% / 10% 30% 60% 20%;
+    }
+
+    100% {
+        border-radius: 10% 40% 40% 70% / 60% 40% 20% 10%;
     }
 }

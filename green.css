@@ -1,6 +1,6 @@
 :root{
-	--mainColor:#606B56;
-	--secondaryColor:#515a48;
+	--mainColor:rgb(96, 107, 86);
+	--secondaryColor:rgb(81, 90, 72);
 
 	--borderColor:#161914;
 
@@ -16,4 +16,22 @@
 	--buttonColor:#669966;
 
 
+}
+
+.s1 {
+    /* background-color: var(--mainColor); */
+    background:
+        linear-gradient(45deg, rgb(81, 90, 72), transparent),
+        repeating-linear-gradient(45deg, rgb(81, 90, 72) 0%, rgb(81, 90, 72) 5%, transparent 5%, transparent 10%),
+        rgb(180, 195, 164) repeating-linear-gradient(-45deg, rgb(81, 90, 72,0.5) 0%, rgb(81, 90, 72,0.5) 5%, transparent 5%, transparent 10%);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.s2 {
+    background: rgb(96, 107, 86);;
+}
+
+.intro-wrapper {
+    background: rgb(96, 107, 86);;
 }
